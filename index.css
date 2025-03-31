@@ -1,0 +1,143 @@
+body {
+    height: 500vh;
+    width: 100%;
+    background-image: linear-gradient(#212121, #0c1a32);
+}
+
+.header{
+    top: 0;
+    left: 0;
+    background-color: #212121;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    z-index: 90;
+    border-bottom: 1px solid white;
+}
+
+.navbar {
+    top: 0;
+    display: flex;
+    align-items: center;
+   
+}
+
+.navbar img {
+    margin-left: 4rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar img:hover {
+    transform: scale(1.1);
+}
+
+.navbar h2{
+    color: white;
+    margin-left: 2rem;
+    margin-right: 35rem;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 2rem;
+    position: relative;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    color: aquamarine;
+}
+
+.navbar li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgb(56, 56, 173);
+    bottom: -7px;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.navbar li:hover:after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.icon-content1 {
+    margin-top: 16rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.icon-content1 i {
+    background-color: #212121;
+    padding: 12px;
+    border-radius: 25px;
+    box-shadow: 0 0 8px 5px rgb(101, 197, 147);
+    margin-right: 16px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.icon-content1 i:hover {
+    box-shadow: 0 0 8px 5px rgb(137, 61, 160);
+}
+
+.content-1 {
+    margin-top: 2rem;
+    justify-items: center;
+    gap: 5px;
+    line-height: 0.7;
+}
+
+#text-1 {
+    color: white;
+    font-size: 32px;
+    font-family: Helvetica;
+}
+
+#text-2 {
+    color: aqua;
+    font-size: 35px;
+    font-family: Helvetica;
+}
+
+.website-adress {
+    color: white;
+    width: 10rem;
+    height: 2rem;
+    background-color: #0a2e6b;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.website-adress h2{
+    text-align: center;
+}
+
+.website-adress:hover {
+    transform: scale(1.1);
+    background-color: #072354;
+}
