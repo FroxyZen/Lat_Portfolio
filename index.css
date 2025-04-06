@@ -23,6 +23,7 @@ body {
     top: 0;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .navbar img {
@@ -40,13 +41,13 @@ body {
 .navbar h2{
     color: white;
     margin-left: 2rem;
-    margin-right: 35rem;
 }
 
 .navbar ul {
     display: flex;
     align-items: center;
     margin-right: 2rem;
+    margin-left: auto;
 }
 
 .navbar li {
