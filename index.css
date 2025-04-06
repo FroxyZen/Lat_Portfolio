@@ -15,11 +15,14 @@ body {
     border-bottom: 1px solid white;
 }
 
+#home, #about {
+    scroll-margin-top: 220px;
+}
+
 .navbar {
     top: 0;
     display: flex;
     align-items: center;
-   
 }
 
 .navbar img {
@@ -70,7 +73,7 @@ body {
     background: rgb(56, 56, 173);
     bottom: -7px;
     border-radius: 5px;
-    transform: translateY(10px);
+    transform: translateX(-10px);
     opacity: 0;
     transition: .5s ease;
 }
@@ -94,6 +97,7 @@ body {
     margin-right: 16px;
     transition: 0.5s ease;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .icon-content1 i:hover {
@@ -103,7 +107,6 @@ body {
 .content-1 {
     margin-top: 2rem;
     justify-items: center;
-    gap: 5px;
     line-height: 0.7;
 }
 
@@ -140,4 +143,72 @@ body {
 .website-adress:hover {
     transform: scale(1.1);
     background-color: #072354;
+}
+
+.content-2 {
+    display: flex;
+    flex-wrap: wrap; /* biar responsive */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 15rem;
+    padding: 2rem;
+    max-width: 1200px;
+    color: white;
+}
+
+.information {
+    margin-left: 4rem;
+    flex: 1 1 300px; /* fleksibel, minimum 400px */
+}
+
+.information h1,h2,h3 {
+    line-height: 20px;
+}
+
+.information h1{
+    color: aqua;
+}
+
+.Picture {
+    flex: 1 1 400px; /* fleksibel, minimum 300px */
+    display: flex;
+    justify-content: center;
+}
+
+.Picture img {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    border-radius: 150px;
+    box-shadow: 0 0 20px 5px aqua;
+    transition: all 0.5s ease;
+}
+
+.Picture img:hover {
+    box-shadow: 0 0 30px 5px aqua;
+    transform: scale(1.1);
+}
+
+.info-icon {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.info-icon i {
+    font-size: 20px;
+    margin-right: 5px;
+    padding: 7px;
+    border-radius: 15px;    
+    box-shadow: 0 0 5px 2px aquamarine;
+    transition: all 0.5s ease;
+}
+.info-icon a{
+    color: white;
+    text-decoration: none;
+}
+.info-icon i:hover {
+    color: rgba(174, 0, 255, 0.902);
+    transform: scale(1.05);
 }
